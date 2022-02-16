@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+
+h1 {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    font-size: 175%;
+}
+
+.row {
+    width: 100%;
+}
+
+.row > section {
+    padding: 10px;
+}
+
+.row > section > .content {
+
+    position: relative;
+    
+    background-color: #999;
+    border: 2px solid black;
+
+}
+
+.row > section > .content > p {
+
+    font-family: 'Brush Script MT', cursive;
+    text-align: justify;
+
+    padding-inline: 10px;
+    padding-top: 40px;
+}
+
+.title {
+
+    position: absolute;
+    width: 120px;
+    right: 0;
+    border: 2px solid black;
+
+}
+
+.bg-pink {
+
+    background-color: #d49898;
+}
+
+.bg-red {
+    background-color: #c14543;
+    color: white;
+}
+
+.bg-yellow {
+    background-color: #e5d097;
+}
+
+.title h2 {
+
+    margin-block: 0;
+
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    font-size: 125%;
+
+}
+
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4, .col-lg-6, .col-lg-12 {
+      float: left;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+
+    .col-lg-6 {
+      width: 50%;
+    }
+
+    .col-lg-12 {
+      width: 100%;
+    }
+  }
+  
+  /********** Tablet devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-4, .col-md-6, .col-md-12 {
+      float: left;
+    }
+
+    .col-md-4 {
+      width: 33.33%;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    .col-md-12 {
+      width: 100%;
+    }
+  }
