@@ -1,0 +1,21 @@
+body {
+
+    height: 5000px;
+}
+
+.menu div {
+    width: 90%;
+    background-color: lightgray;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.menu div p {
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+	.menu div {
+		width: 80%;
+	}
+}
