@@ -1,21 +1,23 @@
 body {
 
     height: 5000px;
+    box-sizing: border-box;
 }
 
-.menu div {
-    width: 90%;
+#menu div {
+    
     background-color: lightgray;
     padding: 15px;
-    margin-bottom: 10px;
+    border: 5px solid white;
 }
 
-.menu div p {
+#menu div p {
     text-align: justify;
 }
 
 @media (max-width: 767px) {
-	.menu div {
-		width: 80%;
-	}
+
+    #menu div {
+        margin-inline: 5%;
+    }
 }
