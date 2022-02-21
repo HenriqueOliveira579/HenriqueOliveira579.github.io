@@ -16,8 +16,7 @@ body {
 }
 
 @media (max-width: 767px) {
-
-    #menu div {
-        margin-inline: 5%;
+    #menu{
+        margin-inline: 3%;
     }
 }
