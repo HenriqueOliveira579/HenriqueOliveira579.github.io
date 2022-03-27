@@ -29,7 +29,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="cortina"></div>
+    <div id="contato">
+      <form action="">
+        <h2>Contato</h2>
+        <p>
+          <label>
+            Nome:*
+            <input type="text" required>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Email:*
+            <input type="text" required>
+          </label>
+        </p>
+
+        <p>  
+          <label>
+            Mensagem:* <br>
+            <textarea cols="30" rows="10" required></textarea>
+          </label>
+        </p>
+
+        <p>
+          
+          <button onclick="fecharModalContato()" id="contato-botao-cancelar" class="contato-botao">Cancelar</button>
+          <input type="reset" value="Limpar" id="contato-botao-limpar" class="contato-botao">
+          <input type="submit" value="Enviar" id="contato-botao-enviar" class="contato-botao">
+        </p>
+
+      </form>
+    </div>
     <header id="topo">
         <div id="logo">
             <figure></figure>
@@ -48,7 +80,7 @@
                 <a href="#galeria">
                     <li>Galeria</li>
                 </a>
-                <a href="#contato">
+                <a href="#" onclick="abrirModalContato()">
                     <li>Contato</li>
                 </a>
             </ul>
