@@ -1,0 +1,380 @@
+@charset 'utf-8';
+
+*{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --azul-claro: #447CF8;
+    --azul-escuro: #2768F8;
+}
+
+a{
+    color: white;
+    font-size: 1.2em;
+}
+
+#topo,#banner,#corpo,#inscrevase,#rodape{
+    float: left;
+}
+
+#cortina{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0,0);
+    z-index: 1;
+    transition: 0.6s;
+    display: none;
+}
+
+/* Barra topo */
+#topo{
+    width: 100%;
+    background-color: var(--azul-claro);
+}
+
+#logo figure{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    margin: 10px 10px 10px 10px;
+}
+
+#logo p {
+    line-height: 80px;
+    color:white;
+    font-size: 25px;
+    float: left;
+}
+
+/* Menu */
+
+#btn-menu{
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+#btn-menu i{
+    color: var(--azul-claro);
+    font-size: 2em;
+}
+
+#menu{
+    z-index: 4;
+    width: 100%;
+    height: 0%;
+    background-color: var(--azul-claro);
+    position: fixed;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+#btn-fechar{
+    float: right;
+    margin-top: 5%;
+    margin-right: 4.3%;
+}
+
+#btn-fechar i{
+    font-size: 2em;
+}
+
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#menu ul li{
+
+    margin-top: 100px;
+}
+
+#menu li:hover {
+
+    transition: 0.2s;;
+    font-size: 1.1em;
+}
+
+#menu:target {
+    height: 100%;
+}
+
+@keyframes aumentar {
+    from {
+
+        font-size: 1em;
+
+    } to {
+
+        font-size: 1.1em;
+
+    }
+}
+
+/* Banner */
+
+#banner{
+    height: 650px;
+    background-color: var(--azul-escuro);
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 1px #000;
+}
+
+#texto-banner {
+    margin-top: 40px;
+}
+
+#banner h1,h2{
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+#banner h1{
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+#carrossel-banner {
+    width: 400px;
+    height: 400px;
+
+    margin-inline: auto;
+}
+
+#carrossel-banner img {
+    height: 400px;
+    width: 400px;
+    margin-inline: auto;
+}
+
+/* Corpo */
+
+#corpo{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Missao */
+
+#missao {
+    margin-block: 20px;
+}
+
+#missao > h2{
+    
+    text-decoration: underline;
+
+}
+
+/* Depoimentos */
+
+#depoimentos {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#depoimentos div {
+
+    padding-top: 10px;
+    width: 350px;
+    height: 180px;
+    background-color: rgb(181, 215, 255);
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+#depoimentos div p{
+    margin-inline: 15px;
+    font-size: 0.9em;
+
+}
+
+/* Rodape */
+
+#rodape {
+    width: 100%;
+    background-color: rgb(218, 218, 218);
+}
+
+#rodape address {
+    text-align: center;
+}
+
+/* Galeria */
+
+#galeria {
+    width: 100%;
+    height: 500px;
+    background-color: var(--azul-escuro);
+}
+
+#galeria > h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+#carrossel-galeria img {
+    margin-inline: auto;
+    width: 400px;
+    height: 400px;
+    
+}
+
+#galeria figure img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 359) {
+    #carrossel-banner {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media (min-width:360px){
+    #logo figure{
+        width: 80px;
+        height: 80px;
+    }
+
+    #logo p{
+        line-height: 100px;
+    }
+
+    #btn-menu{
+        width: 60px;
+        height: 60px;
+
+    }
+    
+    #banner h1{
+        font-size: 2em;
+    }
+
+    body{
+        font-size: 1.2em;
+    }
+
+    #botoes-banner button{    
+        height: 40px;
+    }
+
+}
+
+@media (min-width:768px){
+    #logo figure{
+        width: 80px;
+        height: 80px;
+        background-image: url(../img/logo2.png);
+        background-size: 100%;
+    }
+
+    #btn-menu,#btn-fechar{
+        display: none;
+    }
+
+    #menu{
+        width: 65%;
+        height: 100%;
+        position: relative;
+        float: right;
+        background:none;
+    }
+
+    #menu ul{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+        line-height: 100px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #menu ul li{
+        padding: 0;
+        color: white;
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+@media (min-width:1024px) {
+
+
+    #container-banner {
+        width: 70%;
+        height: 100%;
+    }
+    #texto-banner {
+        margin-top: 100px;
+        margin-left: 10%;
+        text-align: left;
+        width: fit-content;
+        float:left;
+    }
+
+    #carrossel-banner {
+        float: right;
+        margin-top: 5%;
+        margin-right: 10%;
+    }
+
+    #texto-banner h1 {
+        padding: 0;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    #texto-banner {
+        margin-left: 20%;
+    }
+
+    #texto-banner h1 {
+        font-size: 2.1em;
+    }
+
+    #carrossel-banner {
+        margin-right: 12%;
+    }
+
+}
+
+@media (min-width:1500px) {
+    #carrossel-banner {
+        width: 500px;
+        margin-right: 19%;
+    }
+}
