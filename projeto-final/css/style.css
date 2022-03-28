@@ -213,6 +213,9 @@ a{
 /* Corpo */
 
 #corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: center;
     font-size: 1.2em;
@@ -222,6 +225,7 @@ a{
 
 #missao {
     margin-block: 20px;
+    width: 90%;
 }
 
 #missao > h2{
@@ -285,8 +289,9 @@ a{
 
 #carrossel-galeria img {
     margin-inline: auto;
-    width: 400px;
-    height: 400px;
+    width: auto;
+    height: 300px;
+   
     
 }
 
@@ -372,6 +377,7 @@ a{
     #contato form {
         width: 60%;
     }
+
 }
 @media (min-width:1024px) {
 
@@ -420,5 +426,13 @@ a{
     #carrossel-banner {
         width: 500px;
         margin-right: 19%;
+    }
+
+    #missao {
+        width: 80%;
+    }
+
+    #depoimentos {
+        justify-content: space-between;
     }
 }
