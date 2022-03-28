@@ -55,8 +55,14 @@ a{
     border-radius: 10px;
 }
 
-#contato form input, #contato form textarea {
+#contato form input[type=text], #contato form textarea {
+    padding: 3px;
     border-radius: 5px;
+}
+
+#contato form input:focus, #contato form textarea:focus {
+
+    border: 2px solid gray;
 }
 
 .contato-botao {
